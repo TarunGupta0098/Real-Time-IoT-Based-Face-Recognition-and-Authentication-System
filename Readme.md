@@ -181,21 +181,29 @@ This diagram illustrates how the client (Raspberry Pi with PiCamera) communicate
 
 
 
+## 🧱 Program Workflow
+
+![Program Workflow](images/ProgramWorkFlow.png)
+
+This Flowchart illustrates the logical flow of the system—from image capture to authentication and action triggering through IoT.
+The system integrates a streaming client, recognition server, and an IoT control module for actuation.
+
+
 ## 🖼️ Output & Demo
 
 * 🎥 **Live Video Window**: With real-time face detection and names.
 * 🔐 **Servo Unlocks**: When a known face is detected.
-* ❌ **Email Alerts + Image Upload**: If an unknown face is detected.
+* ❌ **Email Alerts + Image Upload**: Either a known or an unknown face is detected.
 * 🛁 **Adafruit IO Dashboard**: Visual feed of known and unknown face snapshots.
 
 ---
 ### Visual Indicators
 
 - ✅ **Green LED ON and Servo Motor rotates at Angle 90°** (Access Granted):
-  ![Green LED ON](images/green.jpg)
+  ![Green LED ON](images/AccessGranted.jpg)
 
 - ❌ **Red LED ON and Servo Motor remains at Base Angle 0°** (Access Denied):
-  ![Red LED ON](images/red.jpg)
+  ![Red LED ON](images/AccessDenied.jpg)
 
   ---
 
